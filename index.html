@@ -1,97 +1,280 @@
 ﻿<!DOCTYPE html>
+<html lang="en">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Home</title>
-    <link href="index.css" rel="stylesheet" />
+<head>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css" />-->
-    <link href="index.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <script src="Scripts/scrollreveal/scrollreveal.js"></script>
-    <script src="Scripts/scrollreveal/scrollreveal.min.js"></script>
-    <script>
-        window.sr = ScrollReveal({ duration: 1000 });
-        if (sr.isSupported()) {
-            document.documentElement.classList.add('sr');
-        }
-    </script>
-    <style>
-        .sr .foo {
-            visibility: hidden;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <title>Stefan Mitic</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!--Navigation Bar-->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#home">My Website</a>
+                <a class="navbar-brand page-scroll" href="#page-top">My Website</a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#work">Work Experience</a></li>
-                    <li><a href="#sport">Sport</a></li>
-                </ul>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>-->
-                    <li><a class="nav-link" target="_blank" href="./Stefan Mitic Resume.pdf">Resume</a></li>
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sport">Sport</a>
+                    </li>
                 </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row intro-text">
+                <div class="col-sm-8">
+                    <div class="intro-lead-in">Hello Everybody, I am</div>
+                    <div class="intro-heading">Stefan Mitic</div>
+                    <a href="#skills" class="page-scroll btn btn-xl">Learn More About Me</a>
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle" src="img/profile_pic.jpg" width="200" alt="Profile Pic">
+                </div>
             </div>
         </div>
-    </nav>
-    <!--About Me Section-->
-    <div class="section odd" id="home" style="padding-top:50px">
-        <div class="container">
-            <h2 class="foo foo-1">Hello, my name is Stefan Mitic</h2>
-            <h4 class="foo foo-1">I am a 3rd year Computer Science student studying at the University of Toronto Scarborough</h4>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-sm-8">
-                    <h4 class="foo foo-1">
-                        <br />
-                        Program:
-                    </h4>
-                    <ul class="courselist foo foo-1">
-                        <li>Information Systems Specialist</li>
-                        <li>Statistics Minor</li>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">skills</h2>
+                </div>
+            </div>
+            <div class="row" style="color:dodgerblue; font-size: 9rem;">
+                <div class="col-sm-3">
+                    <i class="devicon devicon-java-plain-wordmark"></i>
+                    <i class="devicon devicon-javascript-plain"></i>
+                    <i class="devicon devicon-git-plain-wordmark"></i>
+                    <i class="devicon-nodejs-plain"></i>
+                </div>
+                <div class="col-sm-3">
+                    <i class="devicon devicon-c-line"></i>
+                    <i class="devicon devicon-android-plain-wordmark"></i>
+                    <i class="devicon devicon-mysql-plain-wordmark"></i>
+                    <i class="devicon-react-original"></i>
+                </div>
+                <div class="col-sm-3">
+                    <i class="devicon devicon-cplusplus-line"></i>
+                    <i class="devicon devicon-python-plain-wordmark"></i>
+                    <i class="devicon devicon-linux-plain"></i>
+                    <i class="devicon-typescript-plain"></i>
+                </div>
+                <div class="col-sm-3">
+                    <i class="devicon devicon-csharp-line"></i>
+                    <i class="devicon devicon-ubuntu-plain-wordmark"></i>
+                    <i class="devicon devicon-dot-net-plain-wordmark"></i>
+                    <i class="devicon devicon-amazonwebservices-plain-wordmark"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Experience</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <!--<img class="img-circle img-responsive" src="img/about/1.jpg" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <div class="row">
+                                        <h3 class="col-sm-9">Algorithm Design Consultant</h3>
+                                        <h3 class="col-sm-3" style="text-align:right;">Fall 2017</h3>
+                                    </div>
+                                    <h4 class="subheading">Flynxx Inc. Toronto, ON</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul class="text-muted">
+                                        <li> Researched airline revenue management and seat inventory processes, created a working copy that illustrates the integration of the Flynxx model with standard seating models.</li>
+                                        <li>Simulated statistical models of demand distribution (Gamma, Poisson, Normal), added the Flynxx factors onto those models to show potential revenue that can be achieved by airlines.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <!--<img class="img-circle img-responsive" src="img/about/2.jpg" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <div class="row">
+                                        <h3 class="col-sm-8">Software Engineer</h3>
+                                        <h3 class="col-sm-4" style="text-align:right;">Summer 2018</h3>
+                                    </div>
+                                    <h4 class="subheading">SCI Marketview Inc. Markham, ON</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul class="text-muted">
+                                        <li>Worked in a team of 5 to implement Acceptance Test Driven Development in .NET C# for SCI’s automotive leasing web application, created a framework to automate Specflow tests.</li>
+                                        <li>Independently created scripts to automate the creation of tests from existing business rules, as well as had the opportunity to use Angular 6 for the development of a Planning Poker web app.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <h4>
+                                    Be Part
+                                    <br>Of My
+                                    <br>Story!
+                                </h4>
+                            </div>
+                        </li>
                     </ul>
-                    <h4 class="foo foo-1">
-                        <br />
-                        Previous Third Year Courses:
-                    </h4>
-                    <ul class="courselist foo foo-1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section id="projects" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item text-center">
+                    <a href="https://ratemycourses.org/" target="_blank">
+                        <img src="img/project_ratemycourses.png" class="img-responsive img-centered" alt="" style="width:200px;height:200px;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Rate My Courses</h4>
+                        <p class="text-muted">Angular Web App</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center">
+                    <a href="https://github.com/Stefan-Mitic/The-Last-Of-Me" target="_blank">
+                        <img src="img/project_lastofme.png" class="img-responsive img-centered" alt="" style="width:200px;height:200px;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>The Last of Me</h4>
+                        <p class="text-muted">Java Game</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center">
+                    <a href="https://github.com/Stefan-Mitic/Solid-Bank-Application" target="_blank">
+                        <img src="img/project_solidbankapp.png" class="img-responsive img-centered" alt="" style="width:200px;height:200px;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Solid Bank App</h4>
+                        <p class="text-muted">Android App</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center">
+                    <a href="https://github.com/Stefan-Mitic/Tap-Tap-The-Pegs" target="_blank">
+                        <img src="img/project_taptapthepegs.png" class="img-responsive img-centered" alt="" style="width:200px;height:200px;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Tap Tap The Pegs</h4>
+                        <p class="text-muted">Jave Game</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Section -->
+    <section id="education" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Education</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <h3>University of Toronto</h3>
+                </div>
+                <div class="col-sm-3">
+                    <h3>2016 - 2020</h3>
+                </div>
+            </div>
+            <h4>Computer Science Specialist, Statistics Minor</h4>
+            <h4>Bachelor's of Science (GPA: 3.54/4.0)</h4>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Previous 3rd Year Courses</h4>
+                    <ul>
                         <li>Introduction to Software Engineering</li>
                         <li>Introduction to Numerical Algorithms</li>
                         <li>Introduction to Databases</li>
                         <li>Techniques of the Calculus of Several Variables I</li>
                         <li>Stochastic Processes</li>
                     </ul>
-                    <h4 class="foo foo-1">
-                        <br />
-                        Current Third Year Courses:
-                    </h4>
-                    <ul class="courselist foo foo-1">
+                </div>
+                <div class="col-sm-6">
+                    <h4>Current 3rd Year Courses</h4>
+                    <ul>
                         <li>Principles of Programming Languages</li>
                         <li>Computability and Computational Complexity</li>
                         <li>Regression Analysis</li>
@@ -99,121 +282,77 @@
                         <li>Programming on the Web</li>
                     </ul>
                 </div>
-                <div class="col-sm-4">
-                    <img src="Images/profile_pic.jpg" width="200" alt="Profile Pic">
-                </div>
             </div>
         </div>
-    </div>
-    <!--Skills Section-->
-    <div class="section" id="skills">
+    </section>
+
+    <!-- Sport Section -->
+    <section id="sport" class="bg-light-gray">
         <div class="container">
-            <h1 class="foo foo-1 text-center">Skills</h1><br>
-            <div class="container-fluid text-center">
-                <div class="row foo foo-1">
-                    <div class="col-sm-3"><i class="devicon devicon-java-plain-wordmark"></i></div>
-                    <div class="col-sm-3"><i class="devicon devicon-c-line"></i></div>
-                    <div class="col-sm-3"><i class="devicon devicon-cplusplus-line"></i></div>
-                    <div class="col-sm-3"><i class="devicon devicon-csharp-line"></i></div>
-                </div><br>
-                <div class="row foo foo-1">
-                    <div class="col-sm-3"><i class="devicon devicon-javascript-plain"></i></div>
-                    <div class="col-sm-3"><i class="devicon devicon-android-plain-wordmark"></i></div>
-                    <div class="col-sm-3"><i class="devicon devicon-python-plain-wordmark"></i></div>
-                    <div class="col-sm-3"><i class="devicon devicon-ubuntu-plain-wordmark"></i></div>
-                </div><br>
-                <div class="row foo foo-1">
-                    <div class="col-sm-3"><i class="devicon devicon-git-plain-wordmark"></i></div>
-                    <div class="col-sm-3"><i class="devicon devicon-mysql-plain-wordmark"></i></div>
-                    <div class="col-sm-3"><i class="devicon devicon-linux-plain"></i></div>
-                    <div class="col-sm-3"><i class="devicon devicon-dot-net-plain-wordmark"></i></div>
-                </div><br>
-                <br>
-            </div>
-        </div>
-    </div>
-    <!--Projects Section-->
-    <div class="section odd" id="projects">
-        <div class="container">
-            <h1 class="foo foo-1 text-center">Projects</h1>
             <div class="row">
-                <div class="col-sm-4 foo">
-                    <a href="https://github.com/Stefan-Mitic/The-Last-Of-Me" target="_blank">
-                        <img src="Images/project_lastofme.png" class="img-rounded img-responsive " alt="The Last of Me">
-                    </a>
-                </div>
-                <div class="col-sm-4 foo">
-                    <a href="https://github.com/Stefan-Mitic/Tap-Tap-The-Pegs" target="_blank">
-                        <img src="Images/project_taptapthepegs.png" class="img-responsive img-rounded" alt="Tap Tap The Pegs">
-                    </a>
-                </div>
-                <div class="col-sm-4 foo">
-                    <a href="https://github.com/Stefan-Mitic/Solid-Bank-Application" target="_blank">
-                        <img src="Images/project_solidbankapp.png" class="img-responsive img-rounded" alt="Solid Bank Application">
-                    </a>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Water Polo</h2>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--Work Experience Section-->
-    <div class="section" id="work">
-        <div class="container">
-            <h1 class="foo foo-1 text-center">Work Experience</h1>
-            <h3 class="foo foo-1">Software Engineer</h3>
-            <h4 class="foo foo-1">SCI Marketview Inc. (Markham ON) May - Aug. 2018</h4>
-            <ul class="foo foo-1">
-                <li>Worked in a team of 5 to implement Acceptance Test Driven Development in .NET C# for SCI’s automotive leasing web application, created a framework to automate Specflow tests</li>
-                <li>Independently created scripts to automate the creation of tests from existing business rules, as well as had the opportunity to use Angular 6 for the development of a Planning Poker web app</li>
-            </ul>
-            <h3 class="foo foo-1">Algorithm Design Consultant</h3>
-            <h4 class="foo foo-1">Flynxx Inc. (Toronto ON) Sept. - Dec. 2017</h4>
-            <ul class="foo foo-1">
-                <li> Researched airline revenue management and seat inventory processes, created a working copy that illustrates the integration of the Flynxx model with standard seating models</li>
-                <li>Simulated statistical models of demand distribution (Gamma, Poisson, Normal), added the Flynxx factors onto those models to show potential revenue that can be achieved by airlines</li>
-            </ul>
-        </div>
-    </div>
-    <!--Sport Section-->
-    <div class="section odd" id="sport">
-        <div class="container">
-            <h1 class="foo foo-1 text-center">Water Polo</h1>
             <div class="row">
-                <div class="col-sm-8">
-                    <h4 class="foo foo-1">
-                        Achievements:
-                    </h4>
-                    <ul class="foo foo-1">
-                        <li>Gold Medalist in Water Polo for OUA Championships (2016 & 2017) in Ontario</li>
+                <img class="col-xs-12 img-centered" src="img/waterpolo_pic.jpg" alt="">
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>Achievements</h4>
+                    <ul>
+                        <li>Gold Medalist OUA Championships (2016, 2017, 2018)</li>
+                        <li>Athlete Academic Excellence Award (2016, 2017, 2018)</li>
                     </ul>
-                    <h4 class="foo foo-1">
-                        Teams:
-                    </h4>
-                    <ul class="foo foo-1">
+                    <h4>Teams</h4>
+                    <ul>
                         <li>Varsity Blues Water Polo Team (2016 - Present)</li>
                         <li>Toronto Golden Jets Men’s Senior Water Polo Team (2015 - Present)</li>
                         <li>Canadian National Water Polo Team (Summer 2014)</li>
                     </ul>
                 </div>
-                <div class="col-sm-4">
-                    <img src="Images/waterpolo_pic.jpg" width="250" alt="Water Polo Pic">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <a target="_blank" href="./Stefan Mitic Resume.pdf" class="btn btn-xl">Resume</a>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; stefanmitic.com 2019</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="https://github.com/Stefan-Mitic" target="_blank"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/lopez.mitic.1" target="_blank"<i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/stefan-mitic/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Footer-->
-    <footer class="panel-footer">
-        <div class="container-fluid">
-            <div class="text-center">
-                <h3 class="footer-text">Check out my personal accounts:</h3>
-                <a href="https://github.com/Stefan-Mitic" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/stefan-mitic/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
-            </div>
-        </div>
     </footer>
-    <script src="Scripts/zenscroll/zenscroll-min.js"></script>
-    <script src="Scripts/scrollreveal/scrollreveal.min.js"></script>
-    <script>
-        sr.reveal('.foo');
-    </script>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
 </body>
+
 </html>
